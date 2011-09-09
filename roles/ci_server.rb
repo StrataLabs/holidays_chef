@@ -6,6 +6,7 @@ run_list(
   "role[mongo]",
   "recipe[git]",
   "recipe[jenkins]",
+  "nodejs",
   "recipe[rvm::user]"
 )
 
