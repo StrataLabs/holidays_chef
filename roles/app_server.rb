@@ -2,6 +2,7 @@ name "app_server"
 description "simple rails server deployed with passenger."
 run_list(
   "role[base]",
+  "recipe[apache2]",
   "recipe[rvm_passenger]",
   "recipe[rvm::system]"
 )
