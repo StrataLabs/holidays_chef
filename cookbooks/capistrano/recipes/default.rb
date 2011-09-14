@@ -6,6 +6,9 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+run_list(
+  "recipe[users]",
+)
 
 user_account "rails" do
   comment "Rails Deployment User"
